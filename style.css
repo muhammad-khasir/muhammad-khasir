@@ -1,0 +1,249 @@
+* {
+    text-decoration: none;
+    mask-origin: 0px;
+    padding: 0px;
+}
+
+body {
+    mask-origin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1100px; /* Batasi lebar maksimum */
+    margin: auto; /* Pusatkan wrapper agar sisi kiri dan kanan sama */
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background: #2D336B;
+}
+
+/*logo*/
+.logo a {
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family: Courier;
+    color: #B2A5FF;
+}
+
+/*menu*/
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    mask-origin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #2D336B;
+    z-index: 1;
+    border-bottom: 1px solid #ffffff;
+}
+
+#Home img {
+    width: 100%; /* Sesuaikan dengan kebutuhan, misalnya 50% dari container */
+    max-width: 800px; /* Atur batas maksimum */
+    height: auto; /* Menjaga aspek rasio gambar */
+    display: block;
+    margin: 0 auto; /* Agar gambar tetap di tengah */
+}
+
+
+nav ul {
+    list-style-type: none;
+    mask-origin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+a.tbl-menu {
+    background:#578FCA ;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+a.tbl-menu:hover {
+    background: #1882c9;
+    text-decoration: none;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.kolom .Deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: comic sans-serif monospace;
+    color: #B2A5FF;
+}
+
+h2  {
+    font-family: comic sans-serif monospace;
+    font-weight: 800px;
+    font-size: 50px;
+    color: #B2A5FF;
+    line-height: 50px;
+    padding-bottom: 20px;
+}
+
+a.tbl-content {
+    background:#1882c9 ;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+a.tbl-content:hover {
+    background: #578FCA;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+#Tempat img {
+    width: 700px;
+    height: 600px;
+    margin-top: 100px;
+}
+
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.Habaib-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Habib {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.Habib img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.Habib p {
+    font-family: comic sans-serif monospace;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #B2A5FF;
+}
+
+footer {
+    background-color: #1882c9;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+    .logo a {
+        font-size: 30px;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    img {
+        width: 90%;
+        height: auto;
+    }
+    .kolom {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    h2 {
+        font-family: comic sans ms;
+        font-weight: 900;
+        font-size: 29px;
+        color: black;
+    }
+    a.tbl-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%; /* Agar fleksibel di layar kecil */
+        padding: 15px;
+        text-align: center;
+        word-wrap: break-word;
+        white-space: normal;
+        font-size: 15px;
+    }
+    p {
+        padding:  10px 0px 10px 0px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: large;
+    }
+    .kartu-tutor {
+        width: 45%;
+    }
+    .img1 {
+        max-width: 100%;
+    }
+}
